@@ -1,120 +1,120 @@
-
 // ------------ Mobile Black Icon Phone ------------ >
 // JS goes here
 document.getElementById("contactBtn").addEventListener("click", function () {
-  const menu = document.getElementById("contactMenu");
-  menu.classList.toggle("show");
+    const menu = document.getElementById("contactMenu");
+    menu.classList.toggle("show");
 });
 
 document.getElementById("closeBtn").addEventListener("click", function () {
-  const menu = document.getElementById("contactMenu");
-  menu.classList.remove("show");
+    const menu = document.getElementById("contactMenu");
+    menu.classList.remove("show");
 });
 
 document.addEventListener("click", function (event) {
-  const menu = document.getElementById("contactMenu");
-  const btn = document.getElementById("contactBtn");
-  if (!menu.contains(event.target) && !btn.contains(event.target)) {
-      menu.classList.remove("show");
-  }
+    const menu = document.getElementById("contactMenu");
+    const btn = document.getElementById("contactBtn");
+    if (!menu.contains(event.target) && !btn.contains(event.target)) {
+        menu.classList.remove("show");
+    }
 });
 
 // ------------ End Mobile Black Icon Phone ------------ >
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const mobileNavButton = document.querySelector('.btn-mobile-nav');
-  const header = document.querySelector('.header');
+    const mobileNavButton = document.querySelector('.btn-mobile-nav');
+    const header = document.querySelector('.header');
 
-  mobileNavButton.addEventListener('click', function () {
-      header.classList.toggle('nav-open');
-  });
+    mobileNavButton.addEventListener('click', function () {
+        header.classList.toggle('nav-open');
+    });
 });
 
 // ------------------------------------------------- >
 
 // --------------- Animation ------------ >
-    document.addEventListener('DOMContentLoaded', () => {
-        const elements = document.querySelectorAll(
-            '.grid--2-cols, .grid--2-cols-reverse, .hero-title, .hero-button, .carousel-container, .grid-item, .product-container'
-        );
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll(
+        '.grid--2-cols, .grid--2-cols-reverse, .hero-title, .hero-button, .carousel-container, .grid-item, .product-container'
+    );
 
-        elements.forEach(element => {
-            if (element.classList.contains('grid--2-cols') || element.classList.contains('grid--2-cols-reverse')) {
-                element.classList.add('hidden');
-            }
-        });
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    if (entry.target.classList.contains('grid--2-cols-reverse')) {
-                        entry.target.classList.add('slide-in-right');
-                    } else if (entry.target.classList.contains('grid--2-cols')) {
-                        entry.target.classList.add('slide-in-left');
-                    } else {
-                        entry.target.classList.add('slide-in');
-                    }
-                    entry.target.classList.remove('hidden');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        elements.forEach(element => {
-            observer.observe(element);
-        });
-
-        const loadingScreen = document.getElementById('loading-screen');
-        setTimeout(() => {
-            loadingScreen.style.display = 'none';
-        }, 2000);
-    });    document.addEventListener('DOMContentLoaded', () => {
-        const elements = document.querySelectorAll(
-            '.grid--2-cols, .grid--2-cols-reverse, .hero-title, .hero-button, .carousel-container, .grid-item, .product-container'
-        );
-
-        elements.forEach(element => {
-            if (element.classList.contains('grid--2-cols') || element.classList.contains('grid--2-cols-reverse')) {
-                element.classList.add('hidden');
-            }
-        });
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    if (entry.target.classList.contains('grid--2-cols-reverse')) {
-                        entry.target.classList.add('slide-in-right');
-                    } else if (entry.target.classList.contains('grid--2-cols')) {
-                        entry.target.classList.add('slide-in-left');
-                    } else {
-                        entry.target.classList.add('slide-in');
-                    }
-                    entry.target.classList.remove('hidden');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        elements.forEach(element => {
-            observer.observe(element);
-        });
-
-        const loadingScreen = document.getElementById('loading-screen');
-        setTimeout(() => {
-            loadingScreen.style.display = 'none';
-        }, 2000);
+    elements.forEach(element => {
+        if (element.classList.contains('grid--2-cols') || element.classList.contains('grid--2-cols-reverse')) {
+            element.classList.add('hidden');
+        }
     });
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.classList.contains('grid--2-cols-reverse')) {
+                    entry.target.classList.add('slide-in-right');
+                } else if (entry.target.classList.contains('grid--2-cols')) {
+                    entry.target.classList.add('slide-in-left');
+                } else {
+                    entry.target.classList.add('slide-in');
+                }
+                entry.target.classList.remove('hidden');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 0.1});
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+
+    const loadingScreen = document.getElementById('loading-screen');
+    setTimeout(() => {
+        loadingScreen.style.display = 'none';
+    }, 2000);
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll(
+        '.grid--2-cols, .grid--2-cols-reverse, .hero-title, .hero-button, .carousel-container, .grid-item, .product-container'
+    );
+
+    elements.forEach(element => {
+        if (element.classList.contains('grid--2-cols') || element.classList.contains('grid--2-cols-reverse')) {
+            element.classList.add('hidden');
+        }
+    });
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.classList.contains('grid--2-cols-reverse')) {
+                    entry.target.classList.add('slide-in-right');
+                } else if (entry.target.classList.contains('grid--2-cols')) {
+                    entry.target.classList.add('slide-in-left');
+                } else {
+                    entry.target.classList.add('slide-in');
+                }
+                entry.target.classList.remove('hidden');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 0.1});
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+
+    const loadingScreen = document.getElementById('loading-screen');
+    setTimeout(() => {
+        loadingScreen.style.display = 'none';
+    }, 2000);
+});
 
 //  ------------- End Animation ------------ >
 
 // --------------- Mobile Version Galley --------------------------- >
 var swiper = new Swiper(".swiper-container", {
-  pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-  },
-  loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    loop: true,
 
 });
 // --------------- End Mobile Version Galley --------------------------- >
@@ -148,7 +148,7 @@ allLinks.forEach(function (link) {
         // Scroll to other links
         if (href !== "#" && href.startsWith("#")) {
             const sectionEl = document.querySelector(href);
-            sectionEl.scrollIntoView({ behavior: "smooth" });
+            sectionEl.scrollIntoView({behavior: "smooth"});
         }
 
         // Close mobile navigation
@@ -201,6 +201,7 @@ function checkFlexGap() {
 
     if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
+
 checkFlexGap();
 
 
