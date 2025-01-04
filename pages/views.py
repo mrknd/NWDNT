@@ -18,6 +18,14 @@ def about(request):
     return render(request=request, template_name='pages/about.html')
 
 
+def stores(request):
+    return render(request=request, template_name='pages/stores.html')
+
+
+def warranty(request):
+    return render(request=request, template_name='pages/warranty.html')
+
+
 def contact(request):
     if request.method == 'POST':
         name = request.POST.get('name', '')
@@ -25,7 +33,7 @@ def contact(request):
         phone = request.POST.get('phone', '')
         message = request.POST.get('message', '')
 
-        email_subject = f"Нова заявка:"
+        email_subject = f"Нова заявка DONaTan:"
         message_body = (f"Імя: {name} \n"
                         f"Email: {email} \n"
                         f"Телефон: {phone} \n"

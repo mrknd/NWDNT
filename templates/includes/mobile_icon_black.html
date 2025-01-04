@@ -1,21 +1,35 @@
 {% load static %}
 
 <!-- --------- Black Icon Bottom --------- -->
-<div class="floating-btn" id="contactBtn">
-    <img src="{% static 'img/icons/message.svg' %}" alt="">
-</div>
-<div class="floating-menu" id="contactMenu">
-    <a href="viber://chat?number=%2B380671931099" target="_blank">
-        <img src="{% static 'img/icons/viber-chat-app-svgrepo-com.svg' %}" alt="Viber"/> Viber
-    </a>
-    <a href="https://t.me/donatan_manager" target="_blank"> 
-        <img src="{% static 'img/icons/telegram-svgrepo-com.svg' %}" alt="Telegram"/> Telegram
-    </a>
-    <a href="https://wa.me/380671931099" target="_blank">
-        <img src="{% static 'img/icons/whatsapp-whats-app-svgrepo-com.svg' %}" alt="WhatsApp"/> WhatsApp
-    </a>
-    <div class="close-btn" id="closeBtn">
-        <img src="{% static 'img/icons/close-svgrepo-com.svg' %}" alt="">
-    </div>
-</div>
+            <div class="floating-button">
+                <div class="menu">
+                    <div class="whatsapp flt-btn">
+                        <a href="https://wa.me/380671931099" target="_blank">
+                            <img src="{% static 'img/icons/whatsapp.svg' %}" alt="whatsapp" />
+                        </a>
+                    </div>
+                    <div class="telegram flt-btn">
+                        <a href="https://t.me/donatan_manager" target="_blank">
+                            <img src="{% static 'img/icons/telegram.svg' %}" alt="telegram" />
+                        </a>
+                    </div>
+                    <div class="viber flt-btn">
+                        <a href="viber://chat?number=%2B380671931099" target="_blank">
+                            <img src="{% static 'img/icons/viber.svg' %}" alt="viber" />
+                        </a>
+                    </div>
+                </div>
+                <button class="main-button">
+                    <img
+                        src="{% static 'img/icons/message.svg' %}"
+                        alt="Message"
+                        class="icon-floating icon-message"
+                    />
+                    <img
+                        src="{% static 'img/icons/close.svg' %}"
+                        alt="Close"
+                        class="icon-floating icon-close"
+                    />
+                </button>
+            </div>
 <!-- --------- End Black Icon Bottom --------- -->

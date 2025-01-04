@@ -2,7 +2,8 @@
 
 {% load static %}
 
-{% block title %}Дитяча багатофункціональна коляска 2в1 Donatan  {{ single_stroller }} від українського виробника{% endblock %}
+{% block title %}Дитяча багатофункціональна коляска 2в1 Donatan  {{ single_stroller }} від українського
+    виробника{% endblock %}
 {% block meta %}Купити дитячу коляску 2 в 1 Donatan {{ single_stroller }} за найкращою ціною від виробника. Ідеально
     підходить для хлопчика чи дівчинки. Український бренд, висока якість та зручність.{% endblock %}
 
@@ -66,31 +67,38 @@
                 {% endif %}
 
                 {% if single_stroller.stroller_photo_2 %}
-                    <img src="{{ single_stroller.stroller_photo_2.url }}" alt=Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                    <img src="{{ single_stroller.stroller_photo_2.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
                 {% endif %}
 
                 {% if single_stroller.stroller_photo_3 %}
-                    <img src="{{ single_stroller.stroller_photo_3.url }}" alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                    <img src="{{ single_stroller.stroller_photo_3.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
                 {% endif %}
 
                 {% if single_stroller.stroller_photo_4 %}
-                    <img src="{{ single_stroller.stroller_photo_4.url }}" alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                    <img src="{{ single_stroller.stroller_photo_4.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
                 {% endif %}
 
                 {% if single_stroller.stroller_photo_5 %}
-                    <img src="{{ single_stroller.stroller_photo_5.url }}" alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                    <img src="{{ single_stroller.stroller_photo_5.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
                 {% endif %}
 
                 {% if single_stroller.stroller_photo_6 %}
-                    <img src="{{ single_stroller.stroller_photo_6.url }}" alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                    <img src="{{ single_stroller.stroller_photo_6.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
                 {% endif %}
 
                 {% if single_stroller.stroller_photo_7 %}
-                    <img src="{{ single_stroller.stroller_photo_7.url }}" alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                    <img src="{{ single_stroller.stroller_photo_7.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
                 {% endif %}
 
                 {% if single_stroller.stroller_photo_8 %}
-                    <img src="{{ single_stroller.stroller_photo_8.url }}" alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
+                    <img src="{{ single_stroller.stroller_photo_8.url }}"
+                         alt="Багатофункціональна дитяча коляска 2 в 1 {{ single_stroller }}">
                 {% endif %}
 
             </div>
@@ -315,8 +323,10 @@
                     {{ single_stroller.title_name }}
                 </h1>
                 <div class="availability">
-                    <img src="{% static 'img/icons/check.svg' %}" alt="Checkmark" class="checkmark">
-                    <span class="text">В наявності</span>
+                    <div>
+                        <p>99999 UAH</p>
+                    </div>
+
                 </div>
                 <div class="product-description">
                     {{ single_stroller.description | safe }}
@@ -355,7 +365,8 @@
 
             {% if single_stroller.stroller_color_1 %}
                 <div class="detail-color__container">
-                    <img src="{{ single_stroller.stroller_color_1.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <img src="{{ single_stroller.stroller_color_1.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
                     <p>Колір 1</p>
                 </div>
             {% endif %}
@@ -363,57 +374,119 @@
             {% if single_stroller.stroller_color_2 %}
                 <div class="detail-color__container">
 
-                    <img src="{{ single_stroller.stroller_color_2.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
-                    <p>Color 1</p>
+                    <img src="{{ single_stroller.stroller_color_2.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 2</p>
                 </div>
             {% endif %}
 
             {% if single_stroller.stroller_color_3 %}
                 <div class="detail-color__container">
 
-                    <img src="{{ single_stroller.stroller_color_3.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
-                    <p>Color 1</p>
+                    <img src="{{ single_stroller.stroller_color_3.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 3</p>
                 </div>
             {% endif %}
 
             {% if single_stroller.stroller_color_4 %}
-                <img src="{{ single_stroller.stroller_color_4.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_4.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 4</p>
+                </div>
             {% endif %}
 
             {% if single_stroller.stroller_color_5 %}
-                <img src="{{ single_stroller.stroller_color_5.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_5.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 5</p>
+                </div>
             {% endif %}
 
             {% if single_stroller.stroller_color_6 %}
-                <img src="{{ single_stroller.stroller_color_6.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_6.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 6</p>
+                </div>
             {% endif %}
 
             {% if single_stroller.stroller_color_7 %}
-                <img src="{{ single_stroller.stroller_color_7.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_7.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 7</p>
+                </div>
             {% endif %}
             {% if single_stroller.stroller_color_8 %}
-                <img src="{{ single_stroller.stroller_color_8.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_8.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 8</p>
+                </div>
             {% endif %}
             {% if single_stroller.stroller_color_9 %}
-                <img src="{{ single_stroller.stroller_color_9.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_9.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 9</p>
+                </div>
             {% endif %}
             {% if single_stroller.stroller_color_10 %}
-                <img src="{{ single_stroller.stroller_color_10.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_10.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 10</p>
+                </div>
             {% endif %}
             {% if single_stroller.stroller_color_11 %}
-                <img src="{{ single_stroller.stroller_color_11.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_11.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 11</p>
+                </div>
             {% endif %}
             {% if single_stroller.stroller_color_12 %}
-                <img src="{{ single_stroller.stroller_color_12.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_12.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 12</p>
+                </div>
             {% endif %}
             {% if single_stroller.stroller_color_13 %}
-                <img src="{{ single_stroller.stroller_color_13.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_13.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 13</p>
+                </div>
             {% endif %}
             {% if single_stroller.stroller_color_14 %}
-                <img src="{{ single_stroller.stroller_color_14.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_14.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 14</p>
+                </div>
             {% endif %}
             {% if single_stroller.stroller_color_15 %}
-                <img src="{{ single_stroller.stroller_color_15.url }}" alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                <div class="detail-color__container">
+
+                    <img src="{{ single_stroller.stroller_color_15.url }}"
+                         alt="Дитяча коляска універсальна 2 в 1 {{ single_stroller }}">
+                    <p>Колір 15</p>
+                </div>
             {% endif %}
         </div>
     </div>
@@ -440,7 +513,7 @@
 
         let detailColorClose = document.getElementsByClassName("detail-color-close")[0];
         detailColorClose.onclick = function () {
-            detailColorModal.style.display = "none"; 
+            detailColorModal.style.display = "none";
         }
 
         let detailColorPrev = document.getElementsByClassName("detail-color-prev")[0];
@@ -482,7 +555,24 @@
         <div class="container">
             <div class="features-grid">
                 <div class="features-text">
-                    {{ single_stroller.features | safe }}
+                    <ul>
+                        <li>Легка та надійна рама</li>
+                        <li>Додаткові амортизатори для ще більш плавного руху коляски</li>
+                        <li>Закрита система гальмування</li>
+                        <li>Стійкі до проколів гелеві колеса</li>
+                        <li>Передні колеса поворотні на 360° з можливою фіксацією</li>
+                        <li>Обтягнута еко шкірою ручка регулюється по висоті</li>
+                        <li>Вентиляційне вікно на капюшоні люльки та прогулянкового блоку</li>
+                        <li>Спинка пластикової люльки регулюється ззовні</li>
+                        <li>Зручний матрац</li>
+                        <li>Зсередини люлька виконана із 100% бавовни</li>
+                        <li>Функція гойдалки (коли люлька лежить на рівній поверхні)</li>
+                        <li>Регулювання нахилу спинки та підніжки у прогулянковому блоці 5-ти точкові ремені безпеки
+                        </li>
+                        <li>Можливість встановлення прогулянкового блоку в обох напрямках</li>
+                        <li>Можливість встановлення автокрісла</li>
+
+                    </ul>
                 </div>
                 {% if single_stroller.sized_stroller %}
                     <div class="features-image" style="margin: auto">
@@ -697,7 +787,29 @@
     </section>
 
     <!-- --------- End New Section --------- -->
+
+
     <!-- --------- Gallery Section --------- -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
     {% if single_stroller.gallery_photo_1 %}
         <section class="container container__detail">
             <h3>Галерея</h3>
@@ -1077,4 +1189,16 @@
     plusSlidesMobSs(-1);
     }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 {% endblock %}

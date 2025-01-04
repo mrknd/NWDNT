@@ -306,7 +306,7 @@ body::-webkit-scrollbar-thumb:hover {
     transform: translateX(-110%);
     width: 80%;
     height: 3px;
-    background-color: #526D82;
+    background-color: #21252a;
     border-radius: 2px;
 }
 
@@ -318,7 +318,7 @@ body::-webkit-scrollbar-thumb:hover {
     transform: translateX(4%);
     width: 80%;
     height: 3px;
-    background-color: #526D82;
+    background-color: #21252a;
     border-radius: 2px;
 }
 
@@ -330,7 +330,7 @@ body::-webkit-scrollbar-thumb:hover {
     transform: translateX(-50%);
     width: 70%;
     height: 3px;
-    background-color: #526D82;
+    background-color: #21252a;
     border-radius: 2px;
 }
 
@@ -342,7 +342,7 @@ body::-webkit-scrollbar-thumb:hover {
     transform: translateX(-50%);
     width: 70%;
     height: 3px;
-    background-color: #526D82;
+    background-color: #21252a;
     border-radius: 2px;
 }
 
@@ -1423,7 +1423,24 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* ------------ End Footer Section ------------ */
+.cooperation h1 {
+    font-size: 28px;
+    margin: 15px 0;
+}
 
+.cooperation h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.cooperation p {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.cooperation img {
+    margin: 15px 0;
+}
 /* ---------------------------------------------- Detail Page ---------------------------------------------- */
 
 /* ------------ Breadcrumb ------------ */
@@ -1674,11 +1691,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 .availability {
     display: flex;
-    align-items: center;
     color: #387F39;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .checkmark {
@@ -1832,6 +1850,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* ------------ New Section ------------ */
 .grid-detail {
     display: grid;
+    margin-top: 2rem;
 }
 
 .detail-mob-vers {
@@ -1914,6 +1933,7 @@ body::-webkit-scrollbar-thumb:hover {
     .detail-mob-vers {
         display: block;
     }
+
     .grid-template-detail {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -1971,7 +1991,7 @@ body::-webkit-scrollbar-thumb:hover {
         order: 9;
     }
 
-        .about-us-detail .grid-detail:nth-child(4) .detail-img-container {
+    .about-us-detail .grid-detail:nth-child(4) .detail-img-container {
         order: 11;
     }
 
@@ -2045,7 +2065,6 @@ body::-webkit-scrollbar-thumb:hover {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(131, 131, 131, 0.9);
-    border: none;
     padding: 20px;
     cursor: pointer;
     border-radius: 10px;
@@ -2053,6 +2072,7 @@ body::-webkit-scrollbar-thumb:hover {
     z-index: 0;
     border: 1px solid #fff;
     color: #fff;
+    transition: background-color 0.3s ease;
 }
 
 .nav-button__detail-gallery:hover {
@@ -2282,7 +2302,7 @@ body::-webkit-scrollbar-thumb:hover {
     vertical-align: middle;
     margin: 0;
     font-size: 2.4rem;
-    color: #1a5319;
+    color: #21252a;
 }
 
 .contact-card p {
@@ -2314,7 +2334,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 3rem;
-    color: #1a5319;
+    color: #21252a;
 }
 
 .contact-form {
@@ -2327,7 +2347,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contact-form .form-group label {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #555;
     margin-bottom: 0.5rem;
     display: block;
@@ -2338,9 +2358,9 @@ body::-webkit-scrollbar-thumb:hover {
 .contact-form .form-group textarea {
     width: 100%;
     padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
+    border: None;
+    border-bottom: 1px solid black;
+    font-size: 1.8rem;
 }
 
 .contact-form .form-group textarea {
@@ -2406,124 +2426,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* ---------------------------End Contacts Page ----------------------------- */
 
-/* ------------ Mobile Black Icon Phone ------------ */
-
-.floating-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1000;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    animation: pulse 1.5s infinite;
-}
-
-.floating-btn:hover {
-    transform: scale(1.1);
-    background-color: #333;
-}
-
-.floating-btn .icon {
-    font-size: 24px;
-}
-
-.floating-btn img {
-    z-index: 9999;
-    width: 40px;
-}
-
-.floating-menu {
-    position: fixed;
-    bottom: 90px;
-    right: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 10px;
-    display: none;
-    flex-direction: column;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 1000;
-}
-
-.floating-menu.show {
-    display: flex;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.floating-menu a {
-    color: #000;
-    text-decoration: none;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease;
-    font-size: 1.6rem;
-}
-
-.floating-menu a:hover {
-    color: #1a5319;
-}
-
-.floating-menu a img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    transition: transform 0.3s ease;
-}
-
-.floating-menu a:hover img {
-    transform: scale(1.1);
-}
-
-.floating-menu .close-btn {
-    position: absolute;
-    bottom: -70px;
-    right: 0;
-    background-color: #000;
-    color: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.close-btn {
-    width: 25px;
-}
-
-.floating-menu .close-btn:hover {
-    transform: scale(1.1);
-    background-color: #333;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 
 /* ///////////////////////////////Card Component/////////////////////////////////////////////// */
 
@@ -2740,6 +2642,12 @@ body::-webkit-scrollbar-thumb:hover {
         margin-top: 4.6rem;
     }
 
+    .cooperation-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -2801,7 +2709,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 640px ) {
     .detail-color-prev, .detail-color-next {
         color: #000;
-}
+    }
 
 }
 
@@ -3059,6 +2967,7 @@ body::-webkit-scrollbar-thumb:hover {
     animation: slideInFromLeft 0.7s forwards;
     visibility: visible !important;
 }
+
 /*---------- End Animation ----------*/
 .hero-title, .hero-button {
     opacity: 0;
@@ -3096,7 +3005,290 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
 /*---------- End load screeen ----------*/
+.stores-section {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.info-store {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.info-store-street {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.info-store-street span {
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.info-store span {
+    font-weight: 600;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-container a {
+    color: #000;
+}
+
+.info-container img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 480px) {
+    .info-store-street {
+        font-size: 18px;
+    }
+
+    select {
+        font-size: 28px;
+    }
+}
+
+
+.hero-section-stores {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-text-container {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(
+            0,
+            0,
+            0,
+            0.5
+    );
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 700px;
+}
+
+.hero-title-stores {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.hero-subtitle-stores {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+
+/* ---- Floating Button ---- */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1001;
+}
+
+.main-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+    transition: transform 0.3s ease;
+}
+
+.main-button.active {
+    transform: rotate(45deg); /* Легка анімація для кнопки */
+}
+
+.icon-floating {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Плавна анімація */
+}
+
+.icon-message {
+    opacity: 1;
+    transform: scale(1); /* Збільшення іконки при появі */
+}
+
+.icon-close {
+    opacity: 0;
+    transform: scale(0.8); /* Зменшення іконки при приховуванні */
+}
+
+.main-button.active .icon-message {
+    opacity: 0;
+    transform: scale(0.8); /* Зменшення іконки при приховуванні */
+}
+
+.main-button.active .icon-close {
+    opacity: 1;
+    transform: scale(1); /* Збільшення іконки при появі */
+}
+
+.menu {
+    position: absolute;
+    bottom: 80px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    opacity: 0; /* Початково приховано */
+    transform: translateY(40px); /* Рух вниз */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Плавний перехід */
+    pointer-events: none; /* Щоб меню не заважало клікам у прихованому стані */
+}
+
+.menu.open {
+    opacity: 1; /* Відображення */
+    transform: translateY(0); /* Переміщення на місце */
+    pointer-events: auto; /* Активація кліків */
+}
+
+.menu a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(0.9); /* Зменшена іконка на старті */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu.open a {
+    transform: scale(1); /* Іконка повертається до нормального розміру */
+}
+
+.menu a img {
+    width: 35px;
+    height: 35px;
+}
+
+.menu.open {
+    display: flex;
+}
+
+.flt-btn {
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.flt-btn:hover {
+    transform: scale(1.1);
+}
+
+.telegram {
+    background-color: #24a1de;
+}
+
+.whatsapp {
+    background-color: #1cc95b;
+}
+
+.viber {
+    background-color: #7f4da0;
+}
+
+/* ---- End Floating Button ---- */
+/* ---- Warrantly ---- */
+.warranty__section {
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.warranty-container__warranty {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.h1__warranty, .h2__warranty {
+    text-align: center;
+    color: #0078D7;
+}
+
+.h1__warranty {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.h2__warranty {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.h3__warranty {
+    color: #005BB5;
+    margin-top: 20px;
+}
+
+.ul__warranty {
+    padding-left: 20px;
+}
+
+.ul__warranty .li__warranty {
+    margin-bottom: 10px;
+}
+
+.important__warranty {
+    font-weight: bold;
+    color: #D9534F;
+}
+
+/* ---- End Warrantly ---- */
+

@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.donatan.com.ua', 'donatan.com.ua', 'localhost']
+ALLOWED_HOSTS = []
 
 # Application definition
 

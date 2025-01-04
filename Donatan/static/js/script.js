@@ -1,22 +1,22 @@
 // ------------ Mobile Black Icon Phone ------------ >
 // JS goes here
-document.getElementById("contactBtn").addEventListener("click", function () {
-    const menu = document.getElementById("contactMenu");
-    menu.classList.toggle("show");
-});
+                const mainButton = document.querySelector(".main-button");
+                const menu = document.querySelector(".menu");
 
-document.getElementById("closeBtn").addEventListener("click", function () {
-    const menu = document.getElementById("contactMenu");
-    menu.classList.remove("show");
-});
 
-document.addEventListener("click", function (event) {
-    const menu = document.getElementById("contactMenu");
-    const btn = document.getElementById("contactBtn");
-    if (!menu.contains(event.target) && !btn.contains(event.target)) {
-        menu.classList.remove("show");
-    }
-});
+                mainButton.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    menu.classList.toggle("open");
+                    mainButton.classList.toggle("active");
+                });
+
+
+                document.addEventListener("click", (e) => {
+                    if (menu.classList.contains("open")) {
+                        menu.classList.remove("open");
+                        mainButton.classList.remove("active");
+                    }
+                });
 
 // ------------ End Mobile Black Icon Phone ------------ >
 
@@ -205,5 +205,7 @@ function checkFlexGap() {
 checkFlexGap();
 
 
+
+ // ------- Swiper
 
 

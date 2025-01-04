@@ -1,0 +1,503 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Магазини - Donatan{% endblock %}
+{% block meta %}Дізнайтеся про магазини Donatan у вашому регіоні. Зручне розташування, високоякісна продукція та
+    професійне обслуговування чекають на вас!{% endblock %}
+
+{% block og_title %}Магазини - Donatan{% endblock %}
+{% block og_description %}Дізнайтеся про магазини Donatan у вашому регіоні.{% endblock %}
+
+{% block og_image %}{{ request.build_absolute_uri }}{% static 'img/icons/logo/donatan-black-logo.svg' %}{% endblock %}
+{% block og_url %}{{ request.build_absolute_uri }}{% endblock %}
+
+{% block style %}
+    .section-faq {
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 40px;
+    padding: 0 20px;
+    }
+
+    .faq-container-text {
+    max-width: 400px;
+    }
+
+    .faq-container-text p {
+    line-height: 1.5;
+    font-size: 16px;
+    }
+
+    .faq-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .accordion {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 8px;
+    overflow: hidden;
+    }
+
+    .accordion-item {
+    overflow: hidden;
+    }
+
+    .accordion-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    gap: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    }
+
+    .accordion-header h4 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    }
+
+    .accordion-header:hover {
+    background-color: #e0e0e0;
+    }
+
+    .accordion-icon {
+    font-size: 2.5rem;
+    transition: transform 0.3s ease;
+    }
+
+    .accordion-content {
+    height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: height 0.5s ease, padding 0.5s ease;
+    }
+
+    .accordion-content p {
+    font-size: 17px;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-weight: 300;
+    }
+
+    .accordion-item.active .accordion-content {
+    height: auto;
+    padding: 20px 20px 25px;
+    margin-bottom: 30px;
+    }
+
+    .accordion-item.active .accordion-content p {
+    opacity: 1;
+    }
+
+    .accordion-item.active .accordion-icon {
+    transform: rotate(45deg);
+    }
+
+{% endblock %}
+
+{% block content %}
+
+    <section class="hero-section-stores" style="background-image: url('{% static 'img/hero-stores-bg.webp' %}')">
+
+        <div class="hero-text-container">
+            <h1 class="hero-title-stores">Магазини</h1>
+            <p class="hero-subtitle-stores">
+                Познайомитися з продукцією DONaTan ви можете в магазинах по
+                всій Україні. Оберіть місто зі списку, щоб побачити адресу
+                найближчого магазину.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="section-faq">
+
+        <div class="faq-container">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>
+                            Львів
+                        </h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div id="info">
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/cart.svg' %}" alt=""/>
+                                <p class="info-store" style="font-size: 24px;">Магазин: <span>Карапузик</span></p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Вул. <span>Щирецька 36 ТВК Південний ТЦ Карпати</span> маг.
+                                    <span>105 а</span>
+                                </p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Пр. <span>Червоної Калини 36 ТК </span> <span>Шувар</span> маг. <span>143</span>
+                                </p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/smartphone.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Контакт: <a href="tel:+38 067 796 48 36"><span>+380 67 796 48 36</span></a>
+                                </p>
+                            </div>
+
+                            <div class="info-container" style="margin-top: 50px">
+                                <img src="{% static 'img/icons/cart.svg' %}" alt=""/>
+                                <p class="info-store" style="font-size: 24px;">Магазин: <span>Лапуся</span></p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Вул. <span>Карла Мікльоша 15</span>
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/smartphone.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Контакт: <a href=""><span>+380 67 796 48 36</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>
+                            Луцьк
+                        </h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div id="info">
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/cart.svg' %}" alt=""/>
+                                <p class="info-store" style="font-size: 24px;">Магазин: <span>Маля</span></p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    пр. <span>Волі 68</span>
+                                </p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/smartphone.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Контакт: <a href="tel:+38 098 618 58 89"><span>+38 098 618 58 89</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>
+                            Виноградів
+                        </h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div id="info">
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/cart.svg' %}" alt=""/>
+                                <p class="info-store" style="font-size: 24px;">Магазин: <span>Baby House</span></p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Вул. <span>І.Франка 101</span>
+                                </p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/smartphone.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Контакт: <a href="tel:+38 066 286 06 31"><span>+38 066 286 06 31</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>
+                            Івано-Франківськ
+                        </h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div id="info">
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/cart.svg' %}" alt=""/>
+                                <p class="info-store" style="font-size: 24px;">Магазин: <span>Турботлива матуся</span>
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Вул. <span>Дністровська 3 унів.Прикарпаття ТЦ «Зебра»</span>
+                                </p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Вул. <span>Галицька, 43Б</span> Перший поверх, магазин <span>28</span>
+                                </p>
+                            </div>
+
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/smartphone.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Контакт: <a href="tel:+38 096 243 56 66"><span>+38 096 243 56 66</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>
+                            Коломия
+                        </h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div id="info">
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/cart.svg' %}" alt=""/>
+                                <p class="info-store" style="font-size: 24px;">Магазин: <span>Капітошка</span></p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    вул. <span>Сагайдачного 1 прост. Чорновола 26</span>
+                                </p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/smartphone.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Контакт: <a href="tel:+38 098 449 56 01"><span>+38 098 449 56 01</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>
+                            Коростень
+                        </h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div id="info">
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/cart.svg' %}" alt=""/>
+                                <p class="info-store" style="font-size: 24px;">Магазин: <span>KOLYASKI KOROSTEN</span>
+                                </p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    пров. <span>Бориса Лятошинського 16</span>
+                                </p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/smartphone.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Контакт: <a href="tel:+38 067 194 61 51"><span>+38 067 194 61 51</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>
+                            Рівне
+                        </h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div id="info">
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/cart.svg' %}" alt=""/>
+                                <p class="info-store" style="font-size: 24px;">Магазин: <span>BABYBED</span></p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    вул. <span>Замкова 15</span>
+                                </p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/smartphone.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Контакт: <a href="tel:+38 050 505 16 26"><span>+38 050 505 16 26</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>
+                            Тернопіль
+                        </h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div id="info">
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/cart.svg' %}" alt=""/>
+                                <p class="info-store" style="font-size: 24px;">Магазин: <span>Колисочка</span></p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    вул. <span>Збаразьке кільце 13</span>
+                                </p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/smartphone.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Контакт: <a href="tel:+38 067 966 50 71"><span>+38 067 966 50 71</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>
+                            Ужгород
+                        </h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div id="info">
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/cart.svg' %}" alt=""/>
+                                <p class="info-store" style="font-size: 24px;">Магазин: <span>Мандарин</span></p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    вул. <span>Олександра Блистєва</span> ринок <span>на Краснодонців</span>
+                                </p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/smartphone.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Контакт: <a href="tel:+38 095 226 19 04"><span>+38 095 226 19 04</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>
+                            Чернівці
+                        </h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div id="info">
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/cart.svg' %}" alt=""/>
+                                <p class="info-store" style="font-size: 24px;">Магазин: <span>ТВІЙ КАРАПУЗ</span></p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/location.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    вул. <span>Калинівська 13 б, Торговий Дім «Kalinka», магазин 5, 11 </span>
+                                </p>
+                            </div>
+
+                            <div class="info-container">
+                                <img src="{% static 'img/icons/smartphone.svg' %}" alt=""/>
+                                <p class="info-store-street">
+                                    Контакт: <a href="tel:+38 095 226 19 04"><span>+38 095 226 19 04</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document
+            .querySelectorAll(".accordion-header")
+            .forEach((header) => {
+                header.addEventListener("click", () => {
+                    const accordionItem = header.parentElement;
+                    const content =
+                        accordionItem.querySelector(
+                            ".accordion-content"
+                        );
+
+                    // Перевіряємо, чи вже активний блок
+                    if (accordionItem.classList.contains("active")) {
+                        // Якщо активний - закриваємо
+                        content.style.height = "0";
+                        accordionItem.classList.remove("active");
+                    } else {
+                        // Закриваємо всі інші блоки
+                        document
+                            .querySelectorAll(".accordion-item.active")
+                            .forEach((item) => {
+                                item.classList.remove("active");
+                                item.querySelector(
+                                    ".accordion-content"
+                                ).style.height = "0";
+                            });
+
+                        // Відкриваємо поточний
+                        content.style.height =
+                            content.scrollHeight + "px";
+                        accordionItem.classList.add("active");
+                    }
+                });
+            });
+    </script>
+
+{% endblock %}
