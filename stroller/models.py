@@ -13,6 +13,8 @@ class Stroller(models.Model):
     featured_photo = models.ImageField(upload_to='stroller_photo', blank=True, null=True)
     featured_description = models.CharField(max_length=120, blank=True, null=True)
 
+    price = models.IntegerField(default=0)
+
     title_image = models.ImageField(upload_to='stroller_photo', blank=True, null=True)
 
     stroller_photo_1 = models.ImageField(upload_to='stroller_photo')

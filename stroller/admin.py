@@ -13,7 +13,7 @@ class StrollerAdmin(admin.ModelAdmin):
     fieldsets = (
         ('Основне', {
             'fields': ('model_name', 'title_name', 'slug', 'description', 'features', 'title_image', 'is_featured',
-                       'featured_photo', 'featured_description')
+                       'featured_photo', 'featured_description', 'price')
         }),
         ('Основні фото', {
             'fields': (
